@@ -1,11 +1,39 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://github.com/Seyma44/framer-motion-portfolio/assets/3766249/1147480c-b03a-46b2-9b60-1d3180f9542c
 
-Currently, two official plugins are available:
+https://github.com/Seyma44/framer-motion-portfolio/assets/3766249/533202cf-5c5a-4be0-924d-c92e24467710
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Commands**
+
+- Clone the repository: `git clone https://github.com/Seyma44/framer-motion-portfolio`
+- Install dependencies with npm: `npm install`
+- Install dependencies with Yarn: `yarn install`
+
+**Usage**
+
+- Run the development server with npm: `npm run dev`
+- Run the development server with Yarn: `yarn dev`
+- Build the project with npm: `npm run build`
+- Build the project with Yarn: `yarn build`
+- Preview the built project: `npm run preview` or `yarn preview`
+
+## Features
+
+- Utilizes React for building interactive user interfaces.
+- Incorporates Emotion for styling components with CSS-in-JS approach.
+- Integrates Material-UI for access to pre-designed UI components and icons.
+- Employs animations and transitions using GSAP and Framer Motion libraries.
+- Implements scroll animations using AOS (Animate On Scroll) library.
+- Supports smooth transitions and effects with React-GSAP integration.
+- Includes CountUp for animating numerical data on the fly.
+- Utilizes React Router DOM for client-side routing and navigation.
+- Enhances user experience with carousel functionality using React-Slick.
+- Supports typing animations with Typewriter Effect library.
+- Developed with TypeScript for enhanced type safety and developer experience.
+- Utilizes Vite as a fast build tool and development server.
+
+
 
 ## Expanding the ESLint configuration
 
