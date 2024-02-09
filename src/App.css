@@ -1,0 +1,588 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryBackground: #090a1f;
+  --secondaryBackground: #222222;
+  --primaryColor: #d00000;
+  --secondary: #ffacab;
+  --headingColor: #000118;
+  --white: #fff;
+  --black: #000;
+  --sliver: #838383;
+}
+body {
+  background-color: var(--headingColor);
+  color: var(--white);
+  font-family: 'Protest Strike', sans-serif;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover {
+  padding:10px;
+  background: linear-gradient(to right, red, #ff7171);;
+  border-radius:5px;
+}
+p {
+  color: var(--white);
+  font-size: 15px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: 'Protest Guerrilla', sans-serif;
+}
+
+.logo{
+  font-size:34px;
+  font-weight: 500;
+  font-family: 'Protest Guerrilla', sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+.flexsb {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 17px;
+  background-color: var(--white);
+  color: var(--primaryColor);
+  padding: 15px 50px;
+  border-radius: 10px;
+  margin-top: 2px;
+  cursor: pointer;
+  font-family: 'Protest Strike', sans-serif;
+}
+button:hover {
+  background: linear-gradient(to left, #ff7171, white);
+}
+.fontSize {
+  font-size: 20px;
+}
+.primaryBtn {
+  background: linear-gradient(to right, red, #ff7171);
+  color: var(--white);
+}
+
+.secondaryBtn{
+  background: var(--primaryColor);
+  color: var(--white);
+}
+/*---------header-------------*/
+header {
+  background-color: var(--headingColor);
+  height: 10vh;
+  line-height: 10vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+header a {
+  margin-left: 40px;
+}
+.toggle {
+  cursor: pointer;
+  color: var(--white);
+  display: none;
+  padding:0;
+  margin-top:5px;
+}
+.toggle:hover{
+  background:transparent;
+  transform:scale(1.2);
+}
+
+/*---------header-------------*/
+section {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+/*---------hero-------------*/
+.hero {
+  position: relative;
+  background-color: #0007ff61;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../public/images/home-bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 90vh;
+}
+.heroContent {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 60px;
+  font-weight: 600;
+  background: linear-gradient(to right, white, #ffacab, #ff7171, #ff4646, #ff2728, #d00000, white);
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
+}
+
+/*---------hero-------------*/
+.heading {
+  font-size: 30px;
+  color: var(--primaryColor);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/*---------about-------------*/
+.about .primaryBtn {
+  margin-left: 20px;
+}
+.about .heading {
+  text-align: left;
+  margin: 0;
+}
+section.about {
+  padding-top:50px;
+}
+.left {
+  width: 35%;
+}
+.left img{
+  height:70%;
+  border-radius:50%;
+}
+.right {
+  width: 65%;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+
+/*---------services-------------*/
+.services{
+  margin-top:30px;
+}
+.services .box {
+  background-color: var(--primaryBackground);
+  padding: 35px;
+}
+.services i {
+  color: var(--primaryColor);
+}
+.services h3 {
+  margin-top: 20px;
+}
+/*---------services-------------*/
+.grid4 {
+  grid-template-columns: repeat(4, 1fr);
+  height: 50vh;
+  place-items: center;
+  text-align: center;
+}
+
+/*---------counter-------------*/
+.counter {
+  margin-top: 380px;
+  position: relative;
+}
+.hero.counter::after {
+  background-image: url("../public/images/some-facts-bg.png");
+  height: 50vh;
+}
+.counter h1 {
+  margin: 0;
+}
+/*---------counter-------------*/
+/*---------portfolio-------------*/
+
+article {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+article img {
+  width: 100%;
+  height: 100%;
+}
+article .box {
+  position: relative;
+  transition: 0.5s;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 2;
+}
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primaryColor);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+article .box:hover .overlay::after,
+article .box:hover .overlay {
+  opacity: 1;
+}
+.catButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.catButton button {
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+/*---------portfolio-------------*/
+/*---------testimonials-------------*/
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.testimonials::after {
+  background-image: url("../public/images/testimonials-bg.png");
+}
+.testimonials .box {
+  max-width: 60%;
+}
+.testimonials i {
+  background-color: var(--white);
+  font-size: 20px;
+  padding: 15px;
+  margin: 30px 0;
+  display: inline-block;
+  color: var(--primaryColor);
+  border-radius: 5px;
+}
+.testimonials .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 10%;
+  border: 3px solid var(--primaryColor);
+  margin-bottom:10px;
+}
+.testimonials img {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 10%;
+  object-fit: cover;
+  padding:3px;
+}
+label {
+  color: var(--primaryColor);
+  margin: 10px 0;
+  display: inline-block;
+}
+/*---------testimonials-------------*/
+/*---------blog-------------*/
+.blog img {
+  width: 100%;
+}
+section.blog {
+  padding-top:50px;
+}
+.blog .box {
+  background-color: var(--primaryBackground);
+  border-radius: 10px;
+}
+.blog .text {
+  padding: 10px 30px;
+}
+/*---------blog-------------*/
+/*---------contact-------------*/
+.contact {
+  margin: 20px 0;
+  padding-top:100px;
+}
+
+.contact .right,
+.contact .left {
+  padding: 20px;
+}
+.contact .flex input:nth-child(1) {
+  margin-right: 10px;
+}
+.contact button,
+.contact textarea,
+.contact input {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+/*---------contact-------------*/
+/*---------footer-------------*/
+footer {
+  text-align: center;
+  background-color: var(--primaryBackground);
+  padding: 70px;
+  margin-top: 50px;
+}
+footer i {
+  margin: 5px;
+  color: var(--primaryColor);
+}
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*---------footer-------------*/
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 90vh;
+  }
+  .testimonials{
+    height: 100vh;
+  }
+  .testimonials.hero::after {
+  
+    height: 100vh;
+  }
+  .heroContent {
+    max-width: 80%;
+  }
+
+  .hero::after {
+    background-image: url("../public/images/home-bg.png");
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 90vh;
+  }
+  section {
+    height: auto;
+    padding-top: 50px;
+  }
+  .contact .flexsb,
+  .about .flex {
+    flex-direction: column;
+  }
+  .right,
+  .left {
+    width: 100%;
+  }
+  .grid4,
+  .grid3 {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 20px;
+  }
+  article {
+    margin: 0;
+    padding-bottom: 50px;
+  }
+  a:hover {
+    background: transparent;
+    padding:0;
+    color:var(--primaryColor)
+  }
+  .hero.counter::after {
+    background-image: url("../public/images/some-facts-bg.png");
+    height: 60vh;
+  }
+  .counter {
+    margin-top: 150px;
+    position: relative;
+  }
+  .heading{
+    margin-top:30px;
+  }
+  header .nav {
+    display: none;
+  }
+  header a {
+    width: 100%;
+    display: block;
+    color: var(--white);
+  }
+  .toggle {
+    display: block;
+    font-size: 25px;
+    background: none;
+  }
+  .hideMenu {
+    display: block;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background-color: var(--headingColor);
+  }
+  .hero.counter{
+    height: 60vh;
+  }
+  .hero.counter::after {
+    height: 60vh;
+  }
+  .catButton {
+    flex-wrap: wrap;
+    gap:5px;
+  }
+
+  .catButton button {
+    flex: 0 0 45%; /* Set button width for responsiveness */
+  }
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .buttons-container {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    flex-direction: column;
+  }
+  .buttons-container button {
+    width: 100%; /* Make buttons occupy full width */
+    margin-top: 10px; /* Adjust top margin */
+  }
+  .about .primaryBtn {
+     margin-left: 0px; 
+  }
+ 
+  .catButton  {
+    width: 100%; /* Make buttons occupy full width */
+  }
+}
+
+
+/* motto */
+.motto-section {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primaryBackground);
+  position: relative;
+}
+
+@media (max-width: 48em) {
+  .motto-section {
+    width: 100vw;
+  }
+}
+
+.motto-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 64em) {
+  .motto-container {
+    justify-content: center;
+  }
+}
+
+.motto-banner {
+  font-size: 3rem;
+  color: white;
+  white-space: nowrap;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+@media (max-width: 70em) {
+  .motto-banner {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 64em) {
+  .motto-banner {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 48em) {
+  .motto-banner {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 30em) {
+  .motto-banner {
+    font-size: 1.5rem;
+  }
+}
+
+.motto-banner span {
+  display: block;
+  background-color: rgb(
+    ${(Math.floor(Math.random() * 256))},
+    ${(Math.floor(Math.random() * 256))},
+    ${(Math.floor(Math.random() * 256))}
+  );
+  padding: 1rem 2rem;
+}
+
+
